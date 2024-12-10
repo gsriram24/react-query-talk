@@ -15,6 +15,7 @@ import Slide5 from "./slides/Slide5";
 import Slide6 from "./slides/Slide6";
 import Slide7 from "./slides/Slide7";
 import { QueryClient, QueryClientProvider } from "react-query";
+import Slide8 from "./slides/Slide8";
 
 function App() {
   const deckDivRef = useRef(null); // reference to deck container div
@@ -30,6 +31,8 @@ function App() {
       transition: "slide",
       // other config options
       plugins: [RevealMarkdown, RevealHighlight],
+      center: false,
+      margin: 0.1,
     });
 
     deckRef.current.initialize().then(() => {
@@ -55,7 +58,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <div className="reveal" ref={deckDivRef}>
         <div className="slides">
-          <section>
+          <section className="mt-40">
             <h3>Data Fetching in React</h3>
             <h6>
               Async State Management - Why use something like React Query?
@@ -84,6 +87,9 @@ function App() {
           </section>
           <section>
             <Slide7 />
+          </section>
+          <section>
+            <Slide8 />
           </section>
         </div>
       </div>
