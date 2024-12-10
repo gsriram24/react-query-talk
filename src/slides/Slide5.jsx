@@ -1,6 +1,3 @@
-import React from "react";
-import Demo1 from "../demos/demo1";
-
 function Slide5() {
   return (
     <div className="text-left">
