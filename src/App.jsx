@@ -58,12 +58,18 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <div className="reveal" ref={deckDivRef}>
         <div className="slides">
-          <section className="mt-40">
+          <section className="mt-12">
             <h3>Data Fetching in React</h3>
             <h6>
               Async State Management - Why use something like React Query?
             </h6>
-            <div className="text-right  mt-64">
+            <div className="flex flex-col items-center">
+              <a className="text-lg" href="https://react-query-talk.web.app/">
+                https://react-query-talk.web.app/
+              </a>
+              <img src="/main-qr.png" className="w-96" alt="QR Code" />
+            </div>
+            <div className="absolute right-0">
               <h6 className="text-2xl font-semibold">G Sriram</h6>
             </div>
           </section>
